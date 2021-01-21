@@ -1,0 +1,70 @@
+{
+  "id": "ad5bd5b2-4896-4b36-b929-f7700d37d7e8",
+  "version": "2.0",
+  "name": "LinkedIn",
+  "url": "https://www.linkedin.com/mynetwork/invitation-manager/sent/?invitationType=&page=1",
+  "tests": [{
+    "id": "2ff838a3-f963-48c7-9bef-926b827780a7",
+    "name": "LinkedIn",
+    "commands": [{
+      "id": "29488491-0839-4bb8-a7de-aac3e66480fa",
+      "comment": "",
+      "command": "times",
+      "target": "10000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "336784b2-f875-4018-8e68-7b6a57a0a8aa",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.linkedin.com/mynetwork/invitation-manager/sent/?invitationType=&page=1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1944ad8-97c6-4cb6-bae1-e7e279afe9f1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/button",
+      "targets": [
+        ["id=ember71", "id"],
+        ["css=#ember71", "css:finder"],
+        ["xpath=//button[@id='ember71']", "xpath:attributes"],
+        ["xpath=//li[@id='ember69']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Withdraw')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "341af9fe-f25b-4595-8cc5-e7a898371fa6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Withdraw')]",
+      "targets": [
+        ["id=ember918", "id"],
+        ["css=#ember918", "css:finder"],
+        ["xpath=//button[@id='ember918']", "xpath:attributes"],
+        ["xpath=//div[@id='ember916']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Withdraw')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "959deb2b-0913-432a-92f0-5de8d1f2b513",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6d791726-508f-453e-ba44-88276ff1a3e2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2ff838a3-f963-48c7-9bef-926b827780a7"]
+  }],
+  "urls": ["https://www.linkedin.com/mynetwork/invitation-manager/sent/?invitationType=&page=1"],
+  "plugins": []
+}
